@@ -7,9 +7,9 @@ def line(katz_deli)
       line_position = index + 1
       names_with_position << "#{line_position}." << "#{name}"
     end
+    new_string = names_with_position.join(" ")
+    puts "The line is currently: #{final_string}"
   end
-  new_string = names_with_position.join(" ")
-  puts "The line is currently: #{final_string}"
 end
 
 def take_a_number(katz_deli, new_name)
