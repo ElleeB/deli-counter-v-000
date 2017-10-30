@@ -1,15 +1,15 @@
 def line(katz_deli)
-  if katz_deli.size == 0
-    puts "The line is currently empty."
-  else
+  if katz_deli.size > 0
     names_with_position = []
     katz_deli.each_with_index do |name, index|
       line_position = index + 1
       names_with_position << "#{line_position}." << "#{name}"
     end
+    new_string = names_with_position.join(" ")
+    puts "The line is currently: #{final_string}"
+  else
+    puts "The line is currently empty."
   end
-  new_string = names_with_position.join(" ")
-  puts "The line is currently: #{final_string}"
 end
 
 def take_a_number(katz_deli, new_name)
