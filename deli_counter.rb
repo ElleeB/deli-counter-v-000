@@ -18,9 +18,9 @@ end
 #=> "1. Laura. 2. Ryan. 3. Avery"
 #=> ["1.", "Laura.", "2.", "Ryan.", "3.", "Avery"]
 
-[1] and [3] need to be replaced with katz_deli elements
+#[1] and [3] need to be replaced with natmes_with_position elements
+# = ["1", "Laura", "2", "Ryan", "3", "Avery"]
 
-#not/remove between 1-2, 3-4
 
 def take_a_number(katz_deli, new_name)
   katz_deli << new_name
