@@ -14,7 +14,7 @@ def line(katz_deli)
     new_array[1] = names_with_position[1]
     new_array[3] = names_with_position[3]
   end
-  puts new_array
+  new_array.join(" ")
 end
 
 #=>["1", "Laura", "2", "Ryan", "3", "Avery"]
