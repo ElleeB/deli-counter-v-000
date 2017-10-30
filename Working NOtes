@@ -10,9 +10,12 @@ def line(katz_deli)
     katz_deli.each_with_index do |name, index|
       line_position = index + 1
       names_with_position << "#{line_position}" << "#{name}"
-      new_string = names_with_position.join(". ")
-      new_array = new_string.split(",")
+      puts names_with_position.join(". ")
     end
-    new_array
   end
 end
+
+#=>["1", "Laura", "2", "Ryan", "3", "Avery"]
+#=> "1. Laura. 2. Ryan. 3. Avery"
+
+#not/remove between 1-2, 3-4
