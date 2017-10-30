@@ -1,14 +1,14 @@
 def line(katz_deli)
-  if katz_deli.size > 0
+  if katz_deli.size == 0
+    puts "The line is currently empty."
+  else
     names_with_position = []
     katz_deli.each_with_index do |name, index|
       line_position = index + 1
       names_with_position << "#{line_position}." << "#{name}"
+      final_string = names_with_position.join(" ")
     end
-    new_string = names_with_position.join(" ")
-    puts "The line is currently: #{final_string}"
-  else
-    puts "The line is currently empty."
+      puts "The line is currently: #{final_string}"
   end
 end
 
