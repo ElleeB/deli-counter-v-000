@@ -19,9 +19,6 @@ def take_a_number(katz_deli, new_name)
   "#{new_name} #{line_position}"
 end
 
-# -- and then remove them from the front. If there is nobody in line,
-# -- it should call out (puts) that "There is nobody waiting to be served!".
-
 def now_serving(katz_deli)
   if katz_deli > 0
     puts "Currently serving #{katz_deli[0]}."
