@@ -10,7 +10,9 @@ def line(katz_deli)
       names_with_position << "#{line_position}" << "#{name}"
     end
     new_string = names_with_position.join(". ")
-    new_string.split
+    new_array = new_string.split
+    new_array[1] = names_with_position[1]
+    new_array[3] = names_with_position[3]
   end
 end
 
