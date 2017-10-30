@@ -11,17 +11,10 @@ def line(katz_deli)
     new_array = new_string.split # -- set variable for new array from the string that includes periods and spaces
     new_array[1] = names_with_position[1] # -- replace "Name." with the name only stored in n_w_p array
     new_array[3] = names_with_position[3] # -- samem as previous line
-    new_array.join(" ") # -- converts array to string, adds spaces, and returns the new string!
+    final_string = new_array.join(" ") # -- converts array to string, adds spaces, and returns the new string!
+    puts "The line is currently: #{final_string}"
   end
 end
-
-#=>["1", "Laura", "2", "Ryan", "3", "Avery"]
-#=> "1. Laura. 2. Ryan. 3. Avery"
-#=> ["1.", "Laura.", "2.", "Ryan.", "3.", "Avery"]
-
-#[1] and [3] need to be replaced with natmes_with_position elements
-# = ["1", "Laura", "2", "Ryan", "3", "Avery"]
-
 
 def take_a_number(katz_deli, new_name)
   katz_deli << new_name
